@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.btn,
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  gap: 20px;
+  color: aliceblue;
+}
+
+.btn0 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #00000085, #00f);
+  border-image-slice: 1;
+  background-color: transparent;
+  color: #fff;
+  font-size: medium;
+}
+
+.btn1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #050505, rgb(2, 2, 117));
+  border-image-slice: 1;
+  background-color: transparent;
+  color: #fff;
+  font-size: medium;
+}
+
+.btn3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(199, 0, 0, 0.849);
+  border-image-slice: 1;
+  color: #fff;
+  font-size: medium;
+}
+
+.btn2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image:  #3a3a39;
+  border-image-slice: 1;
+  background-color: transparent;
+  color: #fff;
+  font-size: medium;
+}
+
+.Box__Chrono {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.116), #036a81),url('Images/Chronoimg.png');
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.Box__Chrono::before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  filter: blur(80px);
+  opacity: 0.5;
+  z-index: -1;
+}
